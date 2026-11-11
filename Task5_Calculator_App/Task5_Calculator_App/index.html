@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Calculator</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="calculator">
+    <h1>Simple Calculator</h1>
+    <p>Enter two numbers and choose an operation.</p>
+
+    <label for="first-number">First number</label>
+    <input id="first-number" type="number" step="any" placeholder="Enter first number">
+
+    <label for="second-number">Second number</label>
+    <input id="second-number" type="number" step="any" placeholder="Enter second number">
+
+    <div class="operations" aria-label="Calculator operations">
+      <button type="button" data-operation="add">Add (+)</button>
+      <button type="button" data-operation="subtract">Subtract (−)</button>
+      <button type="button" data-operation="multiply">Multiply (×)</button>
+      <button type="button" data-operation="divide">Divide (÷)</button>
+    </div>
+
+    <p id="message" role="status" aria-live="polite">Your result will appear here.</p>
+  </main>
+</body>
+</html>
